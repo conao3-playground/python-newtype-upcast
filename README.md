@@ -10,7 +10,7 @@ from collections.abc import Sequence
 TName = NewType("TName", str)
 
 
-def char_count(name: TName) -> int:
+def char_count(name: str) -> int:
     return len(name)
 
 
