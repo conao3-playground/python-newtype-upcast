@@ -3,7 +3,8 @@
 `Sequence` rather than `list` needs to be used to recognise implicit upcasts.
 
 ```python
-from typing import NewType, Sequence
+from typing import NewType
+from collections.abc import Sequence
 
 
 TName = NewType("TName", str)

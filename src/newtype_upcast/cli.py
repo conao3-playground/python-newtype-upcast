@@ -1,4 +1,5 @@
-from typing import NewType, Sequence
+from typing import NewType
+from collections.abc import Sequence
 
 
 TName = NewType("TName", str)
