@@ -8,6 +8,11 @@ from typing import NewType, Sequence
 
 TName = NewType("TName", str)
 
+
+def char_count(name: TName) -> int:
+    return len(name)
+
+
 def count1(names: list[str]) -> int:
     return len(names)
 
@@ -18,6 +23,9 @@ def count2(names: Sequence[str]) -> int:
 
 def main() -> None:
     names = [TName("John"), TName("Jane"), TName("Joe")]
+
+    # linter happy
+    print(char_count(names[0]))
 
     # Argument of type "list[TName]" cannot be assigned to parameter "names" of type "list[str]" in function "count1"
     # "list[TName]" is incompatible with "list[str]"
